@@ -22,11 +22,6 @@ main {
     margin-top: 50px;
 }
 
-.video-section {
-    margin: 50px auto;
-    text-align: center;
-    margin-top: 8px;
-}
 
 video {
     width: 100%;
@@ -47,11 +42,6 @@ video {
 @media (max-width: 768px) {
     .section {
         padding: 25px;
-    }
-
-    .video-section {
-        margin: unset;
-        text-align: unset;
     }
 }
 
@@ -161,6 +151,10 @@ h3 {
     margin-right: 8px;
     margin-top: 5px;
 
+}
+
+.container {
+    max-width: 960px;
 }
 
 .progress-container {
