@@ -159,6 +159,7 @@ h3 {
     font-size: 0.80rem;
     margin-right: 8px;
     margin-top: 5px;
+
 }
 
 .progress-container {
@@ -175,4 +176,17 @@ a {
 
 .institution-box .portfolio-info h5 a {
     color: #152c5b;
+}
+
+@media (max-width: 1000px) {
+    .institution-box {
+        width: 49%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .institution-box {
+        width: 100%;
+    }
 }
