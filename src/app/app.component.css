@@ -107,6 +107,7 @@ h3 {
     padding-bottom: 8px;
     margin-bottom: 35px;
     margin-left: 8px;
+    min-height: 175px;
 }
 
 .institution-box:hover {
@@ -123,6 +124,10 @@ h3 {
 .max240 {
     height: 240px;
     width: 100%;
+}
+
+.card-img-top {
+    height: 220px;
 }
 
 .institution-box .portfolio-info {
@@ -203,5 +208,9 @@ a {
 @media (max-width: 768px) {
     .institution-box {
         width: 100%;
+    }
+
+    .cards-section {
+        padding: 0px;
     }
 }
