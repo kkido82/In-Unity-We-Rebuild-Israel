@@ -1,9 +1,12 @@
 <header class="header-nav header-transparent fixed-header">
   <div class="fixed-header-bar">
-    <nav class="container">
+    <nav class="container" style="display: flex;">
+      <img height="95" src="assets/in_unity-we-rebuild-logo.jpg" alt="in_unity-we-rebuild-logo">
       <div class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">In Unity We Rebuild</a>
+          <a class="navbar-brand" href="#">
+            In Unity, We Rebuild
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,111 +33,117 @@
   </div>
 </header>
 <main>
-  <section class="section">
+  <section class="section gray-bg">
     <div class="container">
-      <div class="row justify-content-center section-heading">
-        <div class="col-lg-8 col-xl-7 text-center wow fadeInUp" data-wow-duration="0.5s"
-          style="visibility: visible; animation-duration: 0.5s; animation-name: fadeInUp;">
-          <span class="">
-            <h3 class="h1 m-15px-b">Meet <mark>In Unity We Rebuild</mark> Israel</h3>
-            <p class="m-0px font-2">מדוע ישראל תורמת היא הדרך המועדפת ביותר בעולם לתרום לישראל? יש לכך סיבה טובה</p>
-          </span>
+
+      <div class="row md-m-25px-b m-45px-b justify-content-center text-center ">
+        <div class="col-lg-9">
+          <h3 class="h1 mt-3 mb-3">Israel, October 7, 2023.</h3>
+          <div class="lead"><a href="https://en.wikipedia.org/wiki/Simchat_Torah">Holiday of Simchat Tora.</a>
+            A day that is meant for celebration, family, and prayer. <br />
+            At 6:30am, A shocking sound of alarm wakes up the civilians, missiles attack all over the country. More than
+            2000 HAMAS-ISIS terrorists attacked Israel, crossing the border into civilian villages where families were
+            sleeping. More than 1,000 – babies to elderly people were murdered. Cruelty beyond words.
+            Israel is fighting to defend itself
+            In its scale, this massacre reminds one of the holocaust.
+            And this is why Israelis are so shaken, because Israel was established on the promise of “never again” and
+            on Saturday that promise crumbled.
+            We need to renew the promise of Israel to its citizens.
+
+            You were in personal contact with Eran Perelman (CC’d), who in the last few days established a humanitarian
+            relief platform to raise donations to known aid organizations
+
+            If you find this of interest, we will be happy to send you a list of carefully selected organizations, which
+            we trust and we promise to monitor the donations for making sure they will be used for the best possible
+            humanitarian relief targets.
+          </div>
         </div>
       </div>
-      <div class="row separated">
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.05s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.05s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-primary-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-primary fa-solid fa-user-magnifying-glass"></i>
-            </div>
-            <h5 class="mb-3">חיפוש</h5>
-            <p class="m-0">חפשו מבין יותר מ-50,000 העמותות הרשומות בישראל</p>
+
+    </div>
+    <div class="video-section">
+      <video src="assets/speech.mp4" type="video/mp4" controls></video>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row md-m-25px-b m-45px-b justify-content-center text-center ">
+        <div class="col-lg-9">
+          <h3 class="h1 mt-3 mb-3"><mark>Raise Funds</mark> Join The Effort</h3>
+          <div class="lead">With <a href="">some website</a> texts texts texts texts texts texts texts texts texts texts
+            texts texts
+            texts texts texts texts texts texts texts texts texts texts texts texts
+            <br>
+            texts textstexts texts texts texts texts texts texts texts texts texts texts texts
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.05s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.05s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-warning-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-warning fa-solid fa-book-open-reader"></i>
-            </div>
-            <h5 class="mb-3">למדו עוד</h5>
-            <p class="m-0">קראו עוד על הפעילות של העמותות, תורידו את הדוחות שלהם, הישארו מעודכנים ועוד</p>
+      </div>
+      <div class="institutions-box-container">
+        <div class="institution-box" *ngFor="let institute of institutions">
+          <div class="institution-box-img">
+            <img [src]="institute.imgurl" title="" [alt]="institute.name">
           </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.05s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.05s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-success-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-success fa-solid fa-heart"></i>
+          <div class="portfolio-info text-center max125">
+            <div class="ribbon2 angle-text ng-binding ng-hide"></div>
+            <h5><a target="_blank" [href]="institute.href" class="ng-binding">
+                {{ institute.text + institute.name }}</a></h5>
+            <div class="nav justify-content-center">
+              <a target="_blank" [href]="institute.href">
+                <div class="progress-container">
+                  <div class="fundraisinggoal ng-binding">
+                    <b class="ng-binding">{{ institute.targetText }}</b>
+                  </div>
+                  <div class="progress-bar" id="nogoal">
+                    <div class="progress-bar-inner" data-level="61%" style="width: 61%;">
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-            <h5 class="mb-3">תתרמו</h5>
-            <p class="m-0">תירמו בצורה מאובטחת באמצעות כרטיס אשראי, פייפאל, ביט, אפל פיי ועוד</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.05s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.05s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-info-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-info fa-light fa-file-user"></i>
-            </div>
-            <h5 class="mb-3">חשבון מקוון</h5>
-            <p class="m-0">נהלו את התרומות והוראות הקבע שלכם באמצעות חשבון חינמי, מקוון ומאובטח</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.05s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.05s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-info-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-info fa-regular fa-file-invoice-dollar"></i>
-            </div>
-            <h5 class="mb-3">קבלות מס</h5>
-            <p class="m-0">תהנו מזיכוי מס בסך 35% מגובה התרומה - ונעזור לכם לממש את הזיכוי באופן מקוון</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.1s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-info-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-info fa-solid fa-shekel-sign"></i>
-            </div>
-            <h5 class="mb-3">גיוס תרומות</h5>
-            <p class="m-0">צרו קמפיין גיוס תרומות עבור העמותה המועדפת עליכם, הכל ללא עמלות פלטפורמה</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.1s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-danger-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-danger fa-solid fa-gift-card"></i>
-            </div>
-            <h5 class="mb-3">שובר תרומה</h5>
-            <p class="m-0">דרך מצוינת להעניק לעובדים, חברים, ובני המשפחה את מתנת הנתינה</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s"
-          style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.1s; animation-name: fadeInUp;">
-          <div class="py-5 px-4">
-            <div class="position-relative icon-lg justify-content-start mb-4">
-              <span class="position-absolute top-0 end-0 bottom-0 start-0 bg-info-soft ms-n2 me-4"> </span>
-              <i class="fs-1 text-info fa-solid fa-people-arrows"></i>
-            </div>
-            <h5 class="mb-3">חשבון פילנתרופי</h5>
-            <p class="m-0">הפקידו כספים, קבלו זיכוי מס לשנת כספים זו, ותירמו את היתרה ב-20 השנים הבאות</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section class="section gray-bg">
-    <div class="container"></div>
+    <div class="container">
+      <div class="row md-m-25px-b m-45px-b justify-content-center text-center ">
+        <!-- <div class="col-lg-9">
+          <h3 class="h1 mt-3 mb-3"><mark>Raise Funds</mark> Join The Effort</h3>
+          <div class="lead">With <a href="">some website</a> texts texts texts texts texts texts texts texts texts texts
+            texts texts
+            texts texts texts texts texts texts texts texts texts texts texts texts
+            <br>
+            texts textstexts texts texts texts texts texts texts texts texts texts texts texts
+          </div>
+        </div> -->
+      </div>
+      <div class="institutions-box-container">
+        <div class="institution-box" *ngFor="let institute of institutions">
+          <div class="institution-box-img">
+            <img [src]="institute.imgurl" title="" [alt]="institute.name">
+          </div>
+          <div class="portfolio-info text-center max125">
+            <div class="ribbon2 angle-text ng-binding ng-hide"></div>
+            <h5><a target="_blank" [href]="institute.href" class="ng-binding">
+                {{ institute.text + institute.name }}</a></h5>
+            <div class="nav justify-content-center">
+              <a target="_blank" [href]="institute.href">
+                <div class="progress-container">
+                  <div class="fundraisinggoal ng-binding">
+                    <b class="ng-binding">{{ institute.targetText }}</b>
+                  </div>
+                  <div class="progress-bar" id="nogoal">
+                    <div class="progress-bar-inner" data-level="61%" style="width: 61%;">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="section">
     <div class="container"></div>

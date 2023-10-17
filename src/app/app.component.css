@@ -5,7 +5,7 @@
 .fixed-header .fixed-header-bar {
     display: flex;
     align-items: center;
-    background: #ffffff;
+    background-color: #f7f7f7;
     box-shadow: 0 0 64px 0 rgb(22 28 45 / 5%);
 }
 
@@ -18,10 +18,42 @@
     height: 95px;
 }
 
-.section {
-    height: 930px;
-    padding: 100px;
+main {
+    margin-top: 50px;
 }
+
+.video-section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.section {
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .section {
+        /* height: 930px; */
+        padding: 25px;
+    }
+
+    .video-section {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 25px;
+    }
+
+    .video-section {
+        margin: unset;
+        text-align: unset;
+    }
+}
+
 
 .gray-bg {
     background-color: #f2f3fa;
@@ -58,9 +90,89 @@
 }
 
 p {
+    color: #718096;
     font-weight: 400 !important;
 }
 
 h3 {
     padding: 15px;
+}
+
+.institutions-box-container {
+    margin-top: 50px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.institution-box {
+    cursor: pointer;
+    max-height: 400px;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    padding-bottom: 8px;
+    margin-bottom: 35px;
+}
+
+.institution-box:hover {
+    opacity: 0.8;
+    transition: 0.4 ease all;
+}
+
+.institution-box .institution-box-img img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.max240 {
+    height: 240px;
+    width: 100%;
+}
+
+.institution-box .portfolio-info {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.institution-box .portfolio-info {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.max125 {
+    height: 125px;
+}
+
+.institution-box .portfolio-info .nav a {
+    background: #53d267;
+    color: #ffffff;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 0.80rem;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.progress-container {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.institution-box .portfolio-info .nav a {
+    background: #0029a3 !important;
+}
+
+.institution-box .portfolio-info h5 a {
+    color: #152c5b;
 }
