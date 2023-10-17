@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "CircularStd", sans-serif !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: nunito sans,-apple-system,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #08052f;
+}
