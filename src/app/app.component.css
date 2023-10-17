@@ -60,7 +60,7 @@ main {
 }
 
 .dark-bg {
-    background-color: #152c5b;
+    background-color: #f7f7f7;
 }
 
 .footer .footer-top {
@@ -175,4 +175,24 @@ a {
 
 .institution-box .portfolio-info h5 a {
     color: #152c5b;
+}
+
+.photos-box-container {
+    margin-top: 50px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-box {
+    cursor: pointer;
+    max-height: 400px;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    padding-bottom: 8px;
+    margin-bottom: 35px;
 }
