@@ -32,6 +32,11 @@ video {
     padding-bottom: 0;
 }
 
+
+.gray-1-bg {
+    background-color: #dce0ff;
+}
+
 .gray-bg {
     background-color: #f2f3fa;
 }
@@ -73,6 +78,63 @@ p {
 
 h3 {
     padding: 15px;
+}
+
+.established-row-section {
+    padding-bottom: 25px !important;
+}
+
+.established-row {
+    text-align: center;
+}
+
+.established-row .contributors {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.established-row .contributors .contributor {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 1000px) {
+    .established-row .contributors .contributor {
+        width: 48%;
+        margin-bottom: 18px;
+    }
+}
+
+
+/* @media (max-width: 768px) {
+    .contributor {
+        width: 100%;
+    } */
+
+.established-row .contributors .contributor .linkdin-icon-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.established-row .contributors .contributor .linkdin-icon-container .linkdin-icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 9999px;
+
+}
+
+.established-row .contributors .contributor a {
+    text-decoration: none;
+    font-size: small;
+    color: #718096;
+}
+
+.established-row .contributors .contributor a:hover {
+    text-decoration: underline;
 }
 
 .institutions-box-container {

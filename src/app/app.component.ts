@@ -41,7 +41,14 @@ export class AppComponent {
     imgurl: 'assets/soldiers_of_gold.jpg',
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
-  }];
+  },
+{
+  name: 'The Organization for Victims of Terrorism in Israel',
+  href: 'https://givetovictims.org/',
+  imgurl: 'assets/Victims_of_Terrorism_in_Israel.jpg',
+    text: 'Help Us Raise Funds For ',
+    targetText: 'Raised Already 150,000 USD'
+}];
 
   photos = [
     'assets/photos/newspaper_picture.jpg',
@@ -76,4 +83,25 @@ export class AppComponent {
     name: 'Animal Rescue',
     color: '#fd7e14'
   }];
+
+  contributors = [{
+    name: 'Eran Perelman',
+    linkedin: 'https://www.linkedin.com/in/eran-perelman-021a0178'
+  },
+  {
+    name: 'Ido Kerner',
+    linkedin: 'https://www.linkedin.com/in/idokerner/'
+  },
+  {
+    name: 'Limor Amrani',
+    linkedin: 'https://www.linkedin.com/in/limor-amrani-690989288'
+  },
+  {
+    name: 'Liat Sade Lavan',
+    linkedin: 'https://www.linkedin.com/in/liat-sade-lavan-0543801'
+  },
+  {
+    name: 'Keren Nissel',
+    linkedin: ''
+  }]
 }

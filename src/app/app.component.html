@@ -60,9 +60,7 @@
               We need to renew the promise of Israel to its citizens.
             </p>
             <p>
-              You were in personal contact with Eran Perelman (CC`d), who in the last few days established a
-              humanitarian
-              relief platform to raise donations to known aid organizations
+              Eran Perelman established a relief platform to raise donations to known aid organizations.
             </p>
             <p>
               If you find this of interest, we will be happy to send you a list of carefully selected organizations,
@@ -78,13 +76,36 @@
       </div>
     </div>
   </section>
+  <section class="section gray-1-bg established-row-section">
+    <div class="established-row">
+      <h3 class="h1 mt-3 mb-3">Our team is headed by</h3>
+      <div class="contributors">
+        <div class="contributor" *ngFor="let contributor of contributors">
+          {{ contributor.name }}
+          <div class="linkdin-icon-container" *ngIf="contributor.linkedin">
+            <a [href]="contributor.linkedin">
+              <svg class="linkdin-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#2A67BC" d="M0 0h20v20H0z"></path>
+                <path
+                  d="M6.894 14.99H4.56V7.489h2.334v7.5zM5.727 6.464a1.351 1.351 0 11-.002-2.702 1.351 1.351 0 01.003 2.702zm9.898 8.526h-2.331v-3.648c0-.87-.015-1.989-1.211-1.989-1.214 0-1.399.948-1.399 1.927v3.71H8.357V7.489h2.235v1.025h.032c.31-.59 1.07-1.211 2.205-1.211 2.36 0 2.797 1.553 2.797 3.573v4.114z"
+                  fill="#fff"></path>
+              </svg>
+              <a style="margin-left: 5px;" [href]="contributor.linkedin">Linkedin</a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h4>which have initiated the platform In Unity, We Rebuild</h4>
+    </div>
+  </section>
   <section class="section cards-section">
     <div class="container">
       <div class="row md-m-25px-b m-45px-b justify-content-center text-center ">
         <div class="col-lg-9">
           <h3 class="h1 mt-3 mb-3">How can you make a difference</h3>
           <p class="lead">We invite you to stand with us and empower the Israeli people.
-            <br />For details & guidance contact us @ <a href="mailto:inunitywerebuild@gmail.com">inunitywerebuild@gmail.com</a> <br />
+            <br />For details & guidance contact us @ <a
+              href="mailto:inunitywerebuild@gmail.com">inunitywerebuild@gmail.com</a> <br />
             Your donation can be
             directed towards various essential causes of your choice, including:
           </p>
@@ -112,7 +133,8 @@
             Let us demonstrate our unity and solidarity during this challenging time.
             <br />
             Your donation counts!
-            <br />For details & guidance contact us @ <a href="mailto:inunitywerebuild@gmail.com">inunitywerebuild@gmail.com</a> <br />
+            <br />For details & guidance contact us @ <a
+              href="mailto:inunitywerebuild@gmail.com">inunitywerebuild@gmail.com</a> <br />
           </p>
         </div>
       </div>
