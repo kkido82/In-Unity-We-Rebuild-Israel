@@ -28,23 +28,9 @@ video {
 }
 
 .section {
-    padding: 50px;
+    padding: 25px;
     padding-bottom: 0;
 }
-
-@media (max-width: 576px) {
-    .section {
-        /* height: 930px; */
-        padding: 25px;
-    }
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: 25px;
-    }
-}
-
 
 .gray-bg {
     background-color: #f2f3fa;
@@ -90,11 +76,12 @@ h3 {
 }
 
 .institutions-box-container {
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .institution-box {
@@ -179,7 +166,7 @@ a {
 }
 
 .photos-box-container {
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 12px;
     display: flex;
     flex-direction: row;
@@ -200,7 +187,7 @@ a {
 
 
 .causes-box-container {
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 12px;
     display: flex;
     flex-direction: row;
@@ -236,5 +223,9 @@ a {
 
     .cards-section {
         padding: 0px;
+    }
+
+    .cause-box h4 {
+        font-size: small;
     }
 }

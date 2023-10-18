@@ -67,13 +67,13 @@ export class AppComponent {
     name: 'Military support',
     color: '#ffc107'
   }, {
-    name: 'Infrastracture Development',
+    name: 'Infrastracture Rehabilitation',
     color: '#6c757d'
   }, {
-    name: 'Supporting Orphans and Families',
+    name: 'Supporting Orphans & Widows',
     color: '#dc3545'
   }, {
-    name: 'Anumal Rescue',
+    name: 'Animal Rescue',
     color: '#fd7e14'
   }];
 }
