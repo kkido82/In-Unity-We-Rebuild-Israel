@@ -55,5 +55,25 @@ export class AppComponent {
     'assets/photos/terrorists_in_israel_4.jpg',
     'assets/photos/new_york_times_pictures.jpg',
     'assets/photos/with_no_words_picture.jpg',
-  ]
+  ];
+
+  causes = [{
+    name: 'Emergency Services',
+    color: '#0d6efd'
+  }, {
+    name: 'Rebuilding Houses and Comuunities',
+    color: '#198754'
+  }, {
+    name: 'Military support',
+    color: '#ffc107'
+  }, {
+    name: 'Infrastracture Development',
+    color: '#6c757d'
+  }, {
+    name: 'Supporting Orphans and Families',
+    color: '#dc3545'
+  }, {
+    name: 'Anumal Rescue',
+    color: '#fd7e14'
+  }];
 }

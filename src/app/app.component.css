@@ -198,6 +198,30 @@ a {
     margin-bottom: 35px;
 }
 
+
+.causes-box-container {
+    margin-top: 50px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cause-box {
+    width: 30%;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cause-box h4 {
+    color: #f2f3fa;
+}
+
 @media (max-width: 1000px) {
     .institution-box {
         width: 48%;
