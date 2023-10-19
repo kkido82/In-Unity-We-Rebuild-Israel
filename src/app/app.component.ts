@@ -89,10 +89,6 @@ export class AppComponent {
     linkedin: 'https://www.linkedin.com/in/eran-perelman-021a0178'
   },
   {
-    name: 'Ido Kerner',
-    linkedin: 'https://www.linkedin.com/in/idokerner/'
-  },
-  {
     name: 'Limor Amrani',
     linkedin: 'https://www.linkedin.com/in/limor-amrani-690989288'
   },
