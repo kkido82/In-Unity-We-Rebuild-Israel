@@ -101,7 +101,8 @@ export class AppComponent {
     linkedin: 'https://www.linkedin.com/in/liat-sade-lavan-0543801'
   },
   {
-    name: 'Keren Nissel',
-    linkedin: ''
+    name: 'Keren Nissel-Keren',
+    linkedin: '',
+    facebook: 'https://www.facebook.com/KerenKerenInteriorDesign?mibextid=ZbWKwL'
   }]
 }
