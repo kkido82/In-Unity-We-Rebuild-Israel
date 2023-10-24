@@ -30,7 +30,7 @@ export class AppComponent {
   },
   {
     name: 'The Sha`ar HaNegev Regional Council',
-    href: 'https://www.sng.org.il/',
+    href: 'https://www.sng.org.il/7251/',
     imgurl: 'assets/photos/pictures_destruction.jpg',
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
