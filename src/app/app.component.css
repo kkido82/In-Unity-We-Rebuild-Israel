@@ -32,7 +32,6 @@ video {
     padding-bottom: 0;
 }
 
-
 .gray-1-bg {
     background-color: #dce0ff;
 }
@@ -101,14 +100,12 @@ h3 {
     flex-direction: column;
 }
 
-
 @media (max-width: 1000px) {
     .established-row .contributors .contributor {
         width: 48%;
         margin-bottom: 18px;
     }
 }
-
 
 /* @media (max-width: 768px) {
     .contributor {
@@ -143,7 +140,6 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .institution-box {
@@ -247,7 +243,6 @@ a {
     margin-bottom: 35px;
 }
 
-
 .causes-box-container {
     margin-top: 25px;
     padding: 12px;
@@ -277,7 +272,6 @@ a {
     }
 }
 
-
 @media (max-width: 768px) {
     .institution-box {
         width: 100%;
@@ -290,4 +284,8 @@ a {
     .cause-box h4 {
         font-size: small;
     }
+}
+
+.causes-sesction {
+    padding: 25px 25px 0 25px;
 }

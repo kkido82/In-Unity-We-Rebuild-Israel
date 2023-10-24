@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'In-Unity-We-Rebuild-Israel';
   institutions = [{
     name: 'United Hazalah',
-    href: 'https://1221.org.il/',
+    href: 'https://israelrescue.org/',
     imgurl: 'assets/united_hazala.webp',
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
@@ -23,7 +23,7 @@ export class AppComponent {
   },
   {
     name: 'The Association for the Israel Soldiers',
-    href: 'https://www.ufis.org.il/',
+    href: 'https://www.ufis.org.il/en/',
     imgurl: 'assets/swords-of-iron-war-eng.jpg',
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
