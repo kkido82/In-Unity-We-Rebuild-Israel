@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'In-Unity-We-Rebuild-Israel';
+  showMore = false;
+
   institutions = [{
     name: 'United Hazalah',
     href: 'https://israelrescue.org/',
@@ -104,5 +106,5 @@ export class AppComponent {
     name: 'Keren Nissel-Keren',
     linkedin: '',
     facebook: 'https://www.facebook.com/KerenKerenInteriorDesign?mibextid=ZbWKwL'
-  }]
+  }];
 }
