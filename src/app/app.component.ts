@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'In-Unity-We-Rebuild-Israel';
   showMore = false;
+  mainEmail = 'inunitywerebuild@gmail.com';
 
   institutions = [{
     name: 'United Hazalah',
@@ -44,13 +45,21 @@ export class AppComponent {
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
   },
-{
-  name: 'The Organization for Victims of Terrorism in Israel',
-  href: 'https://givetovictims.org/',
-  imgurl: 'assets/Victims_of_Terrorism_in_Israel.jpg',
+  {
+    name: 'The Organization for Victims of Terrorism in Israel',
+    href: 'https://givetovictims.org/',
+    imgurl: 'assets/Victims_of_Terrorism_in_Israel.jpg',
     text: 'Help Us Raise Funds For ',
     targetText: 'Raised Already 150,000 USD'
-}];
+  },
+  {
+    name: 'The S.O.S Pets association',
+    href: 'https://www.sospets.co.il/aboutus',
+    imgurl: 'assets/sos_pets_association.webp',
+    text: 'Help Us Raise Funds For ',
+    targetText: 'Raised Already 150,000 USD'
+  },
+];
 
   photos = [
     'assets/photos/newspaper_picture.jpg',
